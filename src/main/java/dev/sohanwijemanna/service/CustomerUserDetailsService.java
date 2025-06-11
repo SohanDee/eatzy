@@ -28,7 +28,7 @@ public class CustomerUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("User not found");
         }
 
-        USER_ROLE role = user.getUserRole();
+        USER_ROLE role = user.getRole();
 
         List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
 
