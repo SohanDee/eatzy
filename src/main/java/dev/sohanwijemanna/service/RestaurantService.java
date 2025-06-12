@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface RestaurantService {
 
-    public Restaurant createRestaurant(CreateRestaurantRequest request, User user) throws Exception;
+    public Restaurant createRestaurant(CreateRestaurantRequest request, User user);
 
     public Restaurant updateRestaurant(Long restaurantId, CreateRestaurantRequest request) throws Exception;
 
@@ -19,11 +19,11 @@ public interface RestaurantService {
 
     public List<Restaurant> getAllRestaurants() throws Exception;
 
-    public List<Restaurant> searchRestaurants(String search) throws Exception;
+    public List<Restaurant> searchRestaurants(String keyword) throws Exception;
 
     public Restaurant getRestaurantByUserId(Long userId) throws Exception;
 
-    public RestaurantDto addToFavourites(Long restaurantId, Long userId) throws Exception;
+    public RestaurantDto addToFavourites(Long restaurantId, User user) throws Exception;
 
     public Restaurant updateRestaurantStatus(Long Id) throws Exception;
 }
