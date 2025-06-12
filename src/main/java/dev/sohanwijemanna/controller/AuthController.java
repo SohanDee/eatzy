@@ -53,15 +53,8 @@ public class AuthController {
             throw new Exception("Email has being already used");
         }
 
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         User createdUser = userRepository.save(user);
-
-//        System.out.println(user.getRole());
-//        User createdUser = new User();
-//        createdUser.setEmail(user.getEmail());
-//        createdUser.setPassword(passwordEncoder.encode(user.getPassword()));
-//        createdUser.setRole(user.getRole());
-//
-//        User savedUser = userRepository.save(createdUser);
 
         Cart cart = new Cart();
         cart.setCustomer(createdUser);
@@ -91,7 +84,7 @@ public class AuthController {
         String jwt = jwtService.generateToken(authentication);
 
         Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
-        String role = authorities.isEmpty()?null:authorities.iterator().next().getAuthority();
+        String role = authorities.isEmpty() ? null : authorities.iterator().next().getAuthority();
 
         AuthResponse authResponse = new AuthResponse();
         authResponse.setJwtToken(jwt);
