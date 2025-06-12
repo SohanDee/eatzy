@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/admin/restaurants")
+@RequestMapping("/api/admin/restaurant")
 public class AdminRestaurantController {
 
     @Autowired
