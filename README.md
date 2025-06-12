@@ -147,7 +147,7 @@ npm start
 
 **Developer**: Sohan Wijemanna   
 **Website**: [sohanwijemanna.dev](https://sohanwijemanna.dev/)  
-**LinkedIn**: [linkedin.com/in/sohanwijemanna](https://www.linkedin.com/in/sohan-wijemanna)  
+**LinkedIn**: [linkedin.com/in/sohan-wijemanna](https://www.linkedin.com/in/sohan-wijemanna)  
 **Email**: [sohandeemantha@gmail.com](mailto:sohandeemantha@gmail.com)
 
 ---
