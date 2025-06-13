@@ -44,5 +44,4 @@ public class Food {
     private List<IngredientsItem> ingredients = new ArrayList<>();
 
     private Date creationDate;
-
 }
