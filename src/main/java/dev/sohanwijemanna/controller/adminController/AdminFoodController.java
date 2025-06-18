@@ -1,4 +1,4 @@
-package dev.sohanwijemanna.controller;
+package dev.sohanwijemanna.controller.adminController;
 
 import dev.sohanwijemanna.model.Food;
 import dev.sohanwijemanna.model.Restaurant;
@@ -6,7 +6,6 @@ import dev.sohanwijemanna.request.AddFoodRequest;
 import dev.sohanwijemanna.response.MessageResponse;
 import dev.sohanwijemanna.service.FoodService;
 import dev.sohanwijemanna.service.RestaurantService;
-import dev.sohanwijemanna.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

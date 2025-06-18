@@ -1,4 +1,4 @@
-package dev.sohanwijemanna.controller;
+package dev.sohanwijemanna.controller.adminController;
 
 import dev.sohanwijemanna.model.Restaurant;
 import dev.sohanwijemanna.model.User;

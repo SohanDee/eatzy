@@ -1,4 +1,4 @@
-package dev.sohanwijemanna.controller;
+package dev.sohanwijemanna.controller.customerController;
 
 import dev.sohanwijemanna.dto.RestaurantDto;
 import dev.sohanwijemanna.model.Restaurant;

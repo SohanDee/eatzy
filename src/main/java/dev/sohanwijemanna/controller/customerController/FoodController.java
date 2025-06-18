@@ -1,4 +1,4 @@
-package dev.sohanwijemanna.controller;
+package dev.sohanwijemanna.controller.customerController;
 
 import dev.sohanwijemanna.model.Food;
 import dev.sohanwijemanna.service.FoodService;
