@@ -1,7 +1,7 @@
 package dev.sohanwijemanna.request;
 
 import dev.sohanwijemanna.model.Category;
-import dev.sohanwijemanna.model.IngredientsItem;
+import dev.sohanwijemanna.model.IngredientItem;
 import lombok.Data;
 
 import java.util.List;
@@ -16,5 +16,5 @@ public class AddFoodRequest {
     private Long restaurantId;
     private boolean vegetarian;
     private boolean seasonal;
-    private List<IngredientsItem> ingredients;
+    private List<IngredientItem> ingredients;
 }

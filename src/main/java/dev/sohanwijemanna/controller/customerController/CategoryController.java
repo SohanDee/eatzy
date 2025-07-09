@@ -1,8 +1,6 @@
 package dev.sohanwijemanna.controller.customerController;
 
 import dev.sohanwijemanna.model.Category;
-import dev.sohanwijemanna.model.User;
-import dev.sohanwijemanna.request.CreateCategoryRequest;
 import dev.sohanwijemanna.service.CategoryService;
 import dev.sohanwijemanna.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +20,9 @@ public class CategoryController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/restaurant")
-    public ResponseEntity<List<Category>> getAllCategories(@RequestHeader("Authorization") String token) throws Exception {
-        User user = userService.findUserByJwtToken(token);
-        List<Category> categories = categoryService.getCategoriesByRestaurantId(user.getId());
+    @GetMapping("/restaurant/{restaurantId}")
+    public ResponseEntity<List<Category>> getAllCategories(@PathVariable Long restaurantId) throws Exception {
+        List<Category> categories = categoryService.getCategoriesByRestaurantId(restaurantId);
         return new ResponseEntity<>(categories, HttpStatus.OK);
     }
 }
